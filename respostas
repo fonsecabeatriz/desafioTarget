@@ -1,0 +1,31 @@
+# 01 Será a soma de todos os números de 1 a 13, que é o número 91.
+
+
+
+# 2)
+def fibonacci(n):
+    a, b = 0, 1
+    while b < n:
+        a, b = b, a + b 
+    return b == n 
+
+numero = int(input("Digite um número para verificar se pertence à sequência Fibonacci: "))
+
+if fibonacci(numero):
+    print(f"O número {numero} pertence à sequência de Fibonacci.")
+else:
+    print(f"O número {numero} não pertence à sequência de Fibonacci.")
+
+#3 A) 9 - B) 128 - C) 49 - D) 100 - E) 13 - F) 200
+    
+#4 numeraria os interruptores, ligaria um de cada vez com um intervalo de tempo e desligaria um de cada vez também para dar um tempo entre eles, iria até a sala e a saberia qual lampada perence a cada sal através da temeratura da lampada
+
+#5 
+
+string = "Hello world"
+string_invertida = ""
+for i in range(len(string) - 1, -1, -1):
+    string_invertida += string[i]
+
+print("String Original:", string)
+print("String invertida:", string_invertida)
